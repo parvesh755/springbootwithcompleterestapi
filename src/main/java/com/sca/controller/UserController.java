@@ -91,9 +91,8 @@ public class UserController {
 	      return new ResponseEntity<>(userRepository.save(_users), HttpStatus.OK);
 	    } 
 	   else {
-	      return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-	    }
-	  }
+	      return new ResponseEntity<>(HttpStatus.NOT_FOUND); 
+	      }}
 	 
 	 
 	 @DeleteMapping("/userdelete/{id}")
